@@ -5,7 +5,8 @@ var currentUserScore;
 var bestScore = 3;
 
 console.log(`
-How Well Do You Know the TV show 'Suits'`);
+How Well Do You Know the TV show 'Suits'
+Let's find out`);
 console.log("*****************************************")
 
 
