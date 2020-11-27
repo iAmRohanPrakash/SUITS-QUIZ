@@ -4,7 +4,8 @@ var score = 0;
 var currentUserScore;
 var bestScore = 3;
 
-console.log(`How Well Do You Know the TV show 'Suits'`);
+console.log(`
+How Well Do You Know the TV show 'Suits'`);
 console.log("*****************************************")
 
 
@@ -17,11 +18,13 @@ var game = (question,answer) => {
     console.log("Sorry, that was wrong");
   }
   console.log("Your current score is : " + score);
-  console.log("**********************************")
+  console.log(`
+  **********************************`)
 }
 
 var questionSet = [{
-  question : `Suits is set in a fictional law firm in?
+  question : `
+  Q1) Suits is set in a fictional law firm in?
 
               a)Atlanta
               b)New York City
@@ -32,7 +35,8 @@ var questionSet = [{
   answer : "b"
 },
 {
-  question : `Who is the female shark in charge of the 'Suits' law firm?
+  question : `
+  Q2) Who is the female shark in charge of the 'Suits' law firm?
 
               a)Rachel Zane
               b)Donna Paulsen
@@ -43,7 +47,8 @@ var questionSet = [{
   answer : "c"
 },
 {
-  question : `_____ is the firm's expert on all financial matters?
+  question : `
+  Q3) _____ is the firm's expert on all financial matters?
 
               a)Charles Forstman
               b)Robert Zane
@@ -54,7 +59,8 @@ var questionSet = [{
   answer : "d"
 },
 {
-  question : `Harvey's unusual middle name is _______?
+  question : `
+  Q4) Harvey's unusual middle name is _______?
 
               a)Eugene
               b)Martha
@@ -65,7 +71,8 @@ var questionSet = [{
   answer : "c"
 },
 {
-  question : `Who plays Harvey Specter?
+  question : `
+  Q5) Who plays Harvey Specter?
 
               a)Paul Schulze
               b)Eric Palladino
@@ -86,7 +93,7 @@ console.log("Your final score is " + score);
 
 if (bestScore < currentUserScore) {
 
-  console.log("Great!That's a High Score");
+  console.log("Great! That's a High Score");
 
 } 
 
