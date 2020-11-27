@@ -4,6 +4,10 @@ var score = 0;
 var currentUserScore;
 var bestScore = 3;
 
+console.log(`How Well Do You Know the TV show 'Suits'`);
+console.log("*****************************************")
+
+
 var game = (question,answer) => {
   var playerAnswer = readLineSync.question(question);
   if(playerAnswer.toUpperCase() === answer.toUpperCase()){
@@ -17,44 +21,59 @@ var game = (question,answer) => {
 }
 
 var questionSet = [{
-  question : `What's your name
-              a)Rohan
-              b)Sam
-              c)Akash
-              Your choice : `,
-  answer : "a"
-},
-{
-  question : `What's your age
-              a)22
-              b)21
-              c)23
+  question : `Suits is set in a fictional law firm in?
+
+              a)Atlanta
+              b)New York City
+              c)Chicago
+              d)Canada
+
               Your choice : `,
   answer : "b"
 },
 {
-  question : `What's your favourite dish
-              a)Chilli Chicken
-              b)Butter Chichen
-              c)Tandoori Chicken 
+  question : `Who is the female shark in charge of the 'Suits' law firm?
+
+              a)Rachel Zane
+              b)Donna Paulsen
+              c)Jessica Person
+              d)Katrina Bennett
+
               Your choice : `,
   answer : "c"
 },
 {
-  question : `Where do you live
-              a)Ajmer
-              b)Kanpur
-              c)Pune 
+  question : `_____ is the firm's expert on all financial matters?
+
+              a)Charles Forstman
+              b)Robert Zane
+              c)Mike Ross
+              d)Louis Litt
+
               Your choice : `,
-  answer : "b"
+  answer : "d"
 },
 {
-  question : `What's your profile
-              a)Developer
-              b)Designer
-              c)Analyst 
+  question : `Harvey's unusual middle name is _______?
+
+              a)Eugene
+              b)Martha
+              c)Reginald
+              d)Sidwell
+
               Your choice : `,
-  answer : "a"
+  answer : "c"
+},
+{
+  question : `Who plays Harvey Specter?
+
+              a)Paul Schulze
+              b)Eric Palladino
+              c)Gabriel Macht
+              d)Glenn Plummer
+
+              Your choice : `,
+  answer : "c"
 }];
 
 for(var i = 0; i<questionSet.length; i++){
@@ -67,7 +86,7 @@ console.log("Your final score is " + score);
 
 if (bestScore < currentUserScore) {
 
-  console.log("You just made the high score");
+  console.log("Great!That's a High Score");
 
 } 
 
